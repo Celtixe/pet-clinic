@@ -5,21 +5,25 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.1.7.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mikolaj</groupId>
 	<artifactId>pet-clinic</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>pet-clinic</name>
 	<description>Pet Clinic</description>
 
 	<properties>
 		<java.version>11</java.version>
-		<spring-boot.repackage.skip>true</spring-boot.repackage.skip>
+		
 	</properties>
 	<dependencies>
 	</dependencies>
 
+		<scm>
+		      <developerConnection>scm:git:git@github.com:Celtixe/pet-clinic.git</developerConnection>
+		    <tag>pet-clinic-0.0.1</tag>
+		</scm>
 	<build>
 		<plugins>
 			<plugin>
