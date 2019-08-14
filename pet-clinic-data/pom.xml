@@ -12,6 +12,7 @@
   <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
   </properties>
   <dependencies>
   <dependency>
@@ -50,16 +51,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<executions>
-				<execution>
-					<goals>
-						<goal>repackage</goal>
-					</goals>
-					<configuration>
-					<skip>true</skip>
-					</configuration>
-				</execution>			
-				</executions>
+				
 			</plugin>
 		</plugins>
 	</build>
