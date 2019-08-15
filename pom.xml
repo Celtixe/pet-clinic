@@ -20,9 +20,12 @@
 	<dependencies>
 	</dependencies>
 
+
 		<scm>
+				      <url>https://github.com/Celtixe/pet-clinic</url>
+				      <connection>scm:git:git@github.com:Celtixe/pet-clinic.git</connection>
 		      <developerConnection>scm:git:git@github.com:Celtixe/pet-clinic.git</developerConnection>
-		    <tag>pet-clinic-0.0.1</tag>
+		    
 		</scm>
 	<build>
 		<plugins>
