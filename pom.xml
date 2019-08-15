@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.mikolaj</groupId>
 	<artifactId>pet-clinic</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.3</version>
 	<name>pet-clinic</name>
 	<description>Pet Clinic</description>
 
@@ -26,7 +26,7 @@
 				      <connection>scm:git:git@github.com:Celtixe/pet-clinic.git</connection>
 		      <developerConnection>scm:git:git@github.com:Celtixe/pet-clinic.git</developerConnection>
 		    
-		  <tag>HEAD</tag>
+		  <tag>pet-clinic-0.0.3</tag>
   </scm>
   
   <distributionManagement>
