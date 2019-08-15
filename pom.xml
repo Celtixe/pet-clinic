@@ -33,7 +33,7 @@
     <repository>
       <id>myRepoId</id>
       <name>pet-clinic</name>
-      <url>https://github.com/Celtixe/pet-clinic</url>
+      <url>git@github.com:Celtixe/pet-clinic.git</url>
     </repository>
   </distributionManagement>
   
