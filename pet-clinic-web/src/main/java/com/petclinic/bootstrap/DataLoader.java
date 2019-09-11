@@ -10,10 +10,12 @@ import com.petclinic.model.Pet;
 import com.petclinic.model.PetType;
 import com.petclinic.model.Specialty;
 import com.petclinic.model.Vet;
+import com.petclinic.model.Visit;
 import com.petclinic.model.services.OwnerService;
 import com.petclinic.model.services.PetTypeService;
 import com.petclinic.model.services.SpecialtyService;
 import com.petclinic.model.services.VetService;
+import com.petclinic.model.services.VisitService;
 
 
 @Component
@@ -23,19 +25,17 @@ public class DataLoader implements CommandLineRunner {
 	private final VetService vetService;
 	private final PetTypeService petTypeService;
 	private final SpecialtyService specialtyService;
-
+	private final VisitService visitService;
+	
 	public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService,
-			SpecialtyService specialtyService) {
+			SpecialtyService specialtyService,VisitService visitService) {
 		super();
 		this.ownerService = ownerService;
 		this.vetService = vetService;
 		this.petTypeService = petTypeService;
 		this.specialtyService = specialtyService;
+		this.visitService = visitService;
 	}
-
-
-
-
 
 
 	@Override
@@ -47,10 +47,6 @@ public class DataLoader implements CommandLineRunner {
 		}
 
 	}
-
-
-
-
 
 
 	private void loadData() {
@@ -88,8 +84,15 @@ public class DataLoader implements CommandLineRunner {
 		fionasPet.setOwner(owner1);
 		fionasPet.setName("Otto");
 		fionasPet.setBirthDate(LocalDate.now());
-		
+		owner1.getPets().add(fionasPet);
 		ownerService.save(owner1);
+
+		Visit catVisit = new Visit();
+		catVisit.setPet(fionasPet);
+		catVisit.setDate(LocalDate.now());
+		catVisit.setDescription("Sneezy Kitty");
+		visitService.save(catVisit);
+		
 		
 		
 		
