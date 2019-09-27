@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.petclinic.model.services.OwnerService;
+import com.petclinic.services.OwnerService;
 
 @Controller
 @RequestMapping("owners")

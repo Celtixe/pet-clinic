@@ -11,11 +11,11 @@ import com.petclinic.model.PetType;
 import com.petclinic.model.Specialty;
 import com.petclinic.model.Vet;
 import com.petclinic.model.Visit;
-import com.petclinic.model.services.OwnerService;
-import com.petclinic.model.services.PetTypeService;
-import com.petclinic.model.services.SpecialtyService;
-import com.petclinic.model.services.VetService;
-import com.petclinic.model.services.VisitService;
+import com.petclinic.services.OwnerService;
+import com.petclinic.services.PetTypeService;
+import com.petclinic.services.SpecialtyService;
+import com.petclinic.services.VetService;
+import com.petclinic.services.VisitService;
 
 
 @Component

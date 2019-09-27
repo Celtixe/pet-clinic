@@ -1,4 +1,4 @@
-package com.petclinic.model.services.map;
+package com.petclinic.services.map;
 
 import java.util.Set;
 
@@ -7,9 +7,9 @@ import org.springframework.stereotype.Service;
 
 import com.petclinic.model.Owner;
 import com.petclinic.model.Pet;
-import com.petclinic.model.services.OwnerService;
-import com.petclinic.model.services.PetService;
-import com.petclinic.model.services.PetTypeService;
+import com.petclinic.services.OwnerService;
+import com.petclinic.services.PetService;
+import com.petclinic.services.PetTypeService;
 
 @Service
 @Profile({"default","map"})

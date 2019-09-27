@@ -1,4 +1,4 @@
-package com.petclinic.model.services.springdatajpa;
+package com.petclinic.services.springdatajpa;
 
 import java.util.HashSet;
 import java.util.Optional;
@@ -8,21 +8,21 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import com.petclinic.model.Owner;
-import com.petclinic.model.repositories.OwnerRepository;
-import com.petclinic.model.repositories.PetRepository;
-import com.petclinic.model.repositories.PetTypeRepository;
-import com.petclinic.model.services.OwnerService;
+import com.petclinic.repositories.OwnerRepository;
+import com.petclinic.repositories.PetRepository;
+import com.petclinic.repositories.PetTypeRepository;
+import com.petclinic.services.OwnerService;
 
 @Service
 @Profile("springdatajpa")
-public class OwnerJpaSerivce implements OwnerService {
+public class OwnerJpaService implements OwnerService {
 
 	private final OwnerRepository ownerRepository;
 	private final PetRepository petRepository;
 	private final PetTypeRepository petTypeRepository;
 
 	
-	public OwnerJpaSerivce(OwnerRepository ownerRepository, PetRepository petRepository,
+	public OwnerJpaService(OwnerRepository ownerRepository, PetRepository petRepository,
 			PetTypeRepository petTypeRepository) {
 		this.ownerRepository = ownerRepository;
 		this.petRepository = petRepository;

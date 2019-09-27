@@ -1,4 +1,4 @@
-package com.petclinic.model.repositories;
+package com.petclinic.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 

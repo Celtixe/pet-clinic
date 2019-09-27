@@ -10,9 +10,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import com.petclinic.model.Owner;
-import com.petclinic.model.services.map.OwnerServiceMap;
-import com.petclinic.model.services.map.PetServiceMap;
-import com.petclinic.model.services.map.PetTypeServiceMap;
+import com.petclinic.services.map.OwnerServiceMap;
+import com.petclinic.services.map.PetServiceMap;
+import com.petclinic.services.map.PetTypeServiceMap;
 
 public class OwnerServiceMapTest {
 

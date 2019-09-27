@@ -1,4 +1,4 @@
-package com.petclinic.model.services.map;
+package com.petclinic.services.map;
 
 import java.util.Set;
 
@@ -6,8 +6,7 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import com.petclinic.model.Visit;
-
-import com.petclinic.model.services.VisitService;
+import com.petclinic.services.VisitService;
 
 @Service
 @Profile({"default","map"})
